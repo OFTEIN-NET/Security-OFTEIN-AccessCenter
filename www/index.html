@@ -1,0 +1,105 @@
+<html>
+    <head> 
+        <title>OF@TEIN Access Gateway</title>
+        <!--other header tags necessary in the webpage -->
+    </head> 
+    <body> 
+    <!--the main html document will be here-->
+        <div id="container">
+            <div id="header">
+                <h1>OF@TEIN Playground Access Gateway</h1>
+            </div>
+            
+            <div id="content">
+                <p>This website used only for Checking the Connection to OF@TEIN Playground (Testbed) !!! </p>
+                <p>All these steps should be done in order !!! </p>
+            </div>
+
+            <div id="header">
+                <h2>A. Check Bandwitdh and Open Ports</h2>
+            </div>
+            
+            <div id="content">
+                <p>
+                      <a href="/mini/">Testing Your Bandwidth Speed</a>
+                </p>
+                <p>
+                      <a href="/jnetscan/jnetscan.jnlp">Ports Scan (Check Open Ports)</a> (Object: 103.22.221.53, Ports: 22, 80, 8080, 4001-4010)
+                </p>
+            </div>
+
+            <div id="header">
+                <h2>B. Send Account Request and Information</h2>
+            </div>
+
+            <div id="content">
+                <p>Please fill up the form and click submit.</p>
+            </div>
+
+            <form method="POST" action="sendmail.php">
+                Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<input type="text" name="name" value="">&nbsp;&nbsp;(Full Name)<br><br>
+                E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<input type="text" name="mail" value="">&nbsp;&nbsp;(Email for Confirmation)<br><br>
+                Affiliation&nbsp;&nbsp;:&nbsp;<input type="text" name="affiliation" value="">&nbsp;&nbsp;(Institution/University)<br><br>
+                Bandwidth&nbsp;:&nbsp;<input type="text" name="bandwidth" value="">&nbsp;&nbsp;(Bandwidth Testing Result in Mbps)<br><br>
+                Open Ports&nbsp;:&nbsp;<input type="text" name="ports" value="">&nbsp;&nbsp;(Scan Ports Results in CSV format, ex. 22, 80, 400)<br><br>
+                <input type="submit" value="Send">
+            </form>
+
+            <div id="header">
+                <h2>C. Select the Access Method</h2>
+            </div>
+
+            <div id="content">
+                <p>Select the suitable access method based on recommendation from your Test Result.</p>
+                <p>Make sure you have already given account for accesing all those methods</p>
+            </div>
+
+            <div id="header">
+                <h3>1. Tunnel Mode (SSH Protocol)</h3>
+                <p>Currently we only support Windows and Linux Operating Systems.</p>
+                <p>Windows users need to download Putty SSH client and update registry.
+                <br>Linux users need to download the script and execute with options.</p>
+                <p>Windows Machine :
+                <a href = "../access/putty.exe"> Putty SSH Client</a> | <a href = "../access/putty-access-gateway.reg"> Windows Registry for Putty</a></br>
+                Linux Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                <a href = "../access/oftein_access_gateway_tunnel.sh"> Linux Shell Script</a></p>
+            </div>
+
+            <div id="header">
+                <h3>2. Open Virtual Desktop Portal (HTTP Protocol)</h3>
+                <p>It will required java web plugins, please ensure your java plugin updated.
+                <br>Some browser maybe have some security or plugins issues, please check with your browser supports</p>
+                <a href = "../ovd/"> Open Virtual Desktop Page</a></p>
+            </div>
+
+            <div id="header">
+                <h3>3. Virtual Machine Remote Desktop (RDP Protocol)</h3>
+                <p>Currently we only support Windows and Linux Operating Systems.</p>
+                <p>Windows users will utilized default windows remote desktop client.
+                <br>Linux users will "rdesktop" as remote desktop client.</p>
+                <p>Windows Machine :
+                <a href = "c:\windows\system32\mstsc.exe"> Open Remote Desktop</a></br>
+                Linux Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                <a href = "../access/oftein_access_gateway_rdp.sh"> Linux Shell Script</a></p>
+            </div>
+
+
+            <div id="header">
+                <h2>Learning this Access Gateway Implementation</h2>
+            </div>
+
+		    <div id="menu">
+                <a href="index.html">Tunnel Access</a> |
+                <a href="index.html">OpenVirtual Desktop</a> |
+                <a href="index.html">Remote Desktop</a>
+            </div>
+            <div id="content">
+                <p>The quick brown fox jumps over the lazy dog.
+                </p>
+            </div>
+            <div id="footer">
+                Copyright My Website 2012
+            </div>
+        </div>
+    </body> 
+</html>
