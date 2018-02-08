@@ -10,7 +10,7 @@ Providing common/similar access to every operators and developers to OF@TEIN res
 
 The detailed design of OF@TEIN access center is shown below.
 
-![Access-Center-Design](../Access-Center-Deployment.jpg)
+![Access-Center-Design](https://github.com/OFTEIN-NET/Security-OFTEIN-AccessCenter/blob/master/Access-Center-Deployment.jpg)
 
 ### Installation
 
